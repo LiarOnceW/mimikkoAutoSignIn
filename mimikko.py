@@ -69,7 +69,7 @@ def loginRequest_post(url,app_id,app_Version,params):
     params_post = params
     headers_post = {
         'Accept': 'application/json',
-        'Cache-Control': 'no-cache',
+        'Cache-Control': 'public, no-cache',
         'AppID': app_id,
         'Version': app_Version,
         'Content-Type': 'application/json',
@@ -77,6 +77,7 @@ def loginRequest_post(url,app_id,app_Version,params):
         'Connection': 'Keep-Alive',
         'Accept-Encoding': 'gzip',
         'User-Agent': 'okhttp/3.12.1',
+        'Accept-Language': 'zh-cn'
     }
 
     try:
@@ -120,8 +121,7 @@ def apiRequest_post(url,app_id,app_Version,Authorization,params):
         'Host': 'api1.mimikko.cn',
         'Connection': 'Keep-Alive',
         'Accept-Encoding': 'gzip',
-        'User-Agent': 'okhttp/3.12.1',
-        'Accept-Language': 'zh-cn'
+        'User-Agent': 'okhttp/3.12.1'
     }
 
     try:

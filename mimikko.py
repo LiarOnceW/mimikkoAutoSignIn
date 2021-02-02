@@ -121,6 +121,7 @@ def apiRequest_post(url,app_id,app_Version,Authorization,params):
         'Connection': 'Keep-Alive',
         'Accept-Encoding': 'gzip',
         'User-Agent': 'okhttp/3.12.1',
+        'Accept-Language': 'zh-cn'
     }
 
     try:
